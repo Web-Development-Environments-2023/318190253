@@ -202,18 +202,67 @@ web3: אתר שמוכר פריטי יוקרה, לקוחות יכולים לתק�
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
 contact me
 <br/>
 <form action="https://formsubmit.co/liel28@gmail.com" method="POST">
-  <input type="email" name="name" placeholder="write your name here" required>
-  <input type="text" name="message" placeholder="write your message here" required>
+  <input type="email" name="name" placeholder="write your email here" required>
+  <input type="text" name="message" placeholder="write your message here" id="text-input" required>
   <button type="submit">Send</button>
 </form>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emoji Selector</title>
+  <!-- Import the EmojiMart library and its styles -->
+  <link rel="stylesheet" href="https://unpkg.com/emoji-mart/css/emoji-mart.css">
+  <script src="https://unpkg.com/emoji-mart"></script>
+</head>
+<body>
+  <!-- Add a text input field and three buttons to select an emoji -->
+  <div>
+    <button class="emoji-btn" data-emoji=😀>😀</button>
+    <button class="emoji-btn" data-emoji=❤️>❤️</button>
+    <button class="emoji-btn" data-emoji=🚀>🚀</button>
+  </div>
+
+  <script>
+    // Add an event listener to the emoji buttons that inserts the selected emoji into the text input field
+    const input = document.getElementById("text-input");
+    const emojiButtons = document.querySelectorAll(".emoji-btn");
+    emojiButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const emoji = btn.getAttribute("data-emoji");
+        input.value += emoji;
+        input.focus();
+      });
+    });
+  </script>
+</body>
+</html>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 
 
-<br/>
 </section>
 
 
